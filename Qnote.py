@@ -14,12 +14,12 @@ driver.find_element(By.XPATH, '//*[@id="navbarNav"]/ul/li[2]/a').click()
 time.sleep(3)
 
 #---Open the login page
-driver.find_element(By.XPATH, '//*[@id="navbarNav"]/ul/li[1]/a').click()
+driver.find_element(By.XPATH, '/html/body/div/div[2]/form/div[5]/a').click()
 time.sleep(3)
 
 
 
 
 
-# input("Press enter to close browser....")
-driver.quit()
+input("Press enter to close browser....")
+# driver.quit()
