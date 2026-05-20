@@ -50,6 +50,28 @@ driver.find_element(By.ID, 'ContentPlaceHolder1_TxtCapta').send_keys(str(result)
 driver.find_element(By.ID, 'ContentPlaceHolder1_Btn_Submit').click()
 time.sleep(5)
 
-input("Press Enter to close browser...")
+#--open the monsoon patrak
+driver.find_element(By.XPATH, '//*[@id="form1"]/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/a').click()
+time.sleep(3)
+driver.find_element(By.XPATH, '//*[@id="form1"]/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/ul/li[1]/a/p').click()
+time.sleep(3)
+
+#---open the monsoon patrak form
+driver.find_element(By.XPATH,'//*[@id="form1"]/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/ul/li[2]/a').click()
+time.sleep(3)
+
+#----Open the health facility
+driver.find_element(By.XPATH, '//*[@id="form1"]/div[3]/aside/div/div[4]/div/div/nav/ul/li[5]/a').click()
+time.sleep(3)
+
+#---open the health facility details page
+driver.find_element(By.XPATH, '//*[@id="form1"]/div[3]/aside/div/div[4]/div/div/nav/ul/li[5]/ul/li[1]/a').click()
+time.sleep(3)
+
+#---Click on the logout button
+driver.find_element(By.XPATH, '//*[@id="Lnk_Logout"]/font/font').click()
+time.sleep(2)
+
+# input("Press Enter to close browser...")
 
 driver.quit()
