@@ -55,11 +55,22 @@ else:
     print("dashboard page is not open")
 time.sleep(3)
 
+#--open the feedback popp
+driver.find_element(By.ID, 'feedbackBtn').click()
+time.sleep(2)
+#---close the feedback popup
+driver.find_element(By.XPATH, '//*[@id="feedbackModal"]/div/div/div[1]/button').click()
+
 #-----Click on the logout button
-driver.find_element(By.ID, 'profileDropdown').click() #--Click on the profile button
-time.sleep(3)
-# driver.find_element(By.get_finder('https://notes.quizsagar.com/logout')
+# driver.find_element(By.ID, 'profileDropdown').click() #--Click on the profile button
+# time.sleep(3)
+#
+# logout_btn = driver.find_element( By.XPATH,"//button[contains(.,'Log Out')]")
+#
+# # JavaScript click
+# driver.execute_script("arguments[0].click();", logout_btn)
+#
+# print("Logout successful")
 
-
-# input("Press enter to close browser....")
+input("Press enter to close browser....")
 driver.quit()
