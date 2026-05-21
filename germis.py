@@ -72,6 +72,6 @@ time.sleep(3)
 driver.find_element(By.XPATH, '//*[@id="Lnk_Logout"]/font/font').click()
 time.sleep(2)
 
-# input("Press Enter to close browser...")
+input("Press Enter to close browser...")
 
 driver.quit()
