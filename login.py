@@ -61,5 +61,5 @@ time.sleep(3)
 # driver.find_element(By.get_finder('https://notes.quizsagar.com/logout')
 
 
-input("Press enter to close browser....")
+# input("Press enter to close browser....")
 driver.quit()
