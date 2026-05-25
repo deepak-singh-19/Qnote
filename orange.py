@@ -62,7 +62,11 @@ driver.find_element(By.XPATH, '/html/body/div/div[1]/div[1]/header/div[1]/div[3]
 time.sleep(2)
 
 #---click on the logout button
-driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a').click()
+driver.find_element(By.XPATH, '/html/body/div/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a').click()
+if 'login'in driver.current_url:
+    print("Logout successfully")
+else:
+    print("You are still in website")
 
-
+input("Press Enter to close browser")
 driver.quit()
